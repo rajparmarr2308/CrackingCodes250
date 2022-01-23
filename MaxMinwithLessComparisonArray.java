@@ -10,6 +10,7 @@ public class MaxMinwithLessComparisonArray {
     }
 
     private void optimalApproch(int[] a,int l) {
+
         if(l==0)return;
         int max,min,i;
         if(l==1)
@@ -17,7 +18,7 @@ public class MaxMinwithLessComparisonArray {
             max=a[0];
             min=a[0];
         }
-        if(l%2==0){
+        if(l%2==0){                         //for even comparisons :- 3*(n-1)/2 + 1 
             if(a[0]>a[1]){
                 max=a[0];
                 min=a[1];
@@ -28,7 +29,7 @@ public class MaxMinwithLessComparisonArray {
             }
             i=2;
         }
-        else{
+        else{                              //for odd comparisons :- 3*(n-1)/2
             max=a[0];
             min=a[1];
             i=1;
