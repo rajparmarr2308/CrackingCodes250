@@ -19,7 +19,7 @@ public class MaxMinwithLessComparisonArray {
             min=a[0];
         }
         if(l%2==0){                         //for even comparisons :- 3*(n-1)/2 + 1 
-            if(a[0]>a[1]){
+            if(a[0]>a[1]){                  //one extra comparison for this if condition
                 max=a[0];
                 min=a[1];
             }
